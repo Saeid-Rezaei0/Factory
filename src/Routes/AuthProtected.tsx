@@ -9,7 +9,6 @@ const AuthProtected: React.FC<AuthProtectedProps> = ({ children }) => {
   if (!localStorage.getItem("authUser")) {
     return <Navigate to={{ pathname: "/login" }} />;
   }
-
   return <React.Fragment>{children}</React.Fragment>;
 };
 

@@ -31,7 +31,7 @@ export const loginUser = (
         }
         if (response) {
             dispatch(loginSuccess(response));
-            history("/dashboard");
+            history("/FlourFactory");
         }
     } 
 

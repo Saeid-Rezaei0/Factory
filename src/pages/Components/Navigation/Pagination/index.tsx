@@ -9,7 +9,6 @@ const Pagination = () => {
         <React.Fragment>
             <div className="container-fluid group-data-[content=boxed]:max-w-boxed mx-auto">
                 <BreadCrumb title="Pagination" pageTitle="Navigation" />
-
                 <BasicPagination />
                 <BorderedPagination />
                 <SizesPagination />

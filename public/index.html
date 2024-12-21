@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" lang="en" dir="rtl">
+
 <head>
   <meta charset="utf-8" />
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -11,6 +12,35 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
+  <style>
+    body {
+      font-family: 'IRANSansweb' !important;
+
+      /* تنظیمات کلی اسکرول بار */
+      ::-webkit-scrollbar {
+        width: 6px;
+        /* عرض اسکرول بار کوچکتر */
+        height: 6px;
+        /* ارتفاع اسکرول بار (برای حالت افقی) */
+      }
+
+      /* تنظیم رنگ و ظاهر بخش قابل حرکت اسکرول بار */
+      ::-webkit-scrollbar-thumb {
+        background-color: #cec9c9;
+        /* رنگ سرمه‌ای */
+        border-radius: 10px;
+        /* گوشه‌های گرد */
+      }
+
+      /* تنظیمات برای اسکرول بار پس‌زمینه */
+      ::-webkit-scrollbar-track {
+        background-color: #ffffff;
+        /* پس‌زمینه سفید */
+        border-radius: 10px;
+      }
+
+    }
+  </style>
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet"
@@ -28,7 +58,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>Tailwick - React Admin & Dashboard Template</title>
+  <title>کارخانه آرد</title>
 </head>
 
 <body>

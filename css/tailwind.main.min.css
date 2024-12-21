@@ -1,0 +1,143 @@
+/*
+Template Name: Tailwick - Admin & Dashboard Template
+Author: Themesdesign
+Version: 1.1.0
+Website: https://themesdesign.in/
+Contact: Themesdesign@gmail.com
+File: tailwind scss File
+*/
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.gridjs-container {
+  @apply text-slate-800 dark:text-zink-50;
+}
+
+.gridjs-footer {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  @apply border-slate-200 bg-white shadow-none dark:border-zink-500 dark:bg-zink-700;
+}
+
+input.gridjs-input {
+  @apply border-slate-200 bg-white dark:border-zink-500 dark:bg-zink-700;
+}
+input.gridjs-input:focus {
+  @apply shadow-none border-custom-500;
+}
+
+.gridjs-pagination {
+  @apply text-custom-600;
+}
+.gridjs-pagination .gridjs-pages button {
+  @apply border-slate-200 bg-white dark:border-zink-500 dark:bg-zink-700;
+}
+.gridjs-pagination .gridjs-pages button:focus {
+  @apply shadow-md border-r border-slate-200 dark:border-zink-500;
+}
+.gridjs-pagination .gridjs-pages button:hover {
+  @apply text-slate-600 bg-slate-50 dark:bg-zink-600 dark:text-zink-100;
+}
+.gridjs-pagination .gridjs-pages button:disabled, .gridjs-pagination .gridjs-pages button[disabled], .gridjs-pagination .gridjs-pages button:hover:disabled {
+  @apply text-slate-400 bg-white dark:bg-zink-700 dark:text-zink-200;
+}
+.gridjs-pagination .gridjs-pages button.gridjs-spread, .gridjs-pagination .gridjs-pages button.gridjs-currentPage {
+  @apply bg-white dark:bg-zink-700;
+}
+.gridjs-pagination .gridjs-pages button:last-child {
+  @apply border-r border-slate-200 dark:border-zink-500;
+}
+
+.gridjs-tbody {
+  @apply bg-white dark:bg-zink-700;
+}
+
+td.gridjs-td {
+  @apply border-slate-200 bg-transparent dark:border-zink-500;
+}
+
+th.gridjs-th {
+  @apply text-slate-600 bg-slate-50 border-slate-200 dark:border-zink-500 dark:text-zink-100 dark:bg-zink-600;
+}
+th.gridjs-th-sort:hover, th.gridjs-th-sort:focus {
+  @apply bg-slate-200 dark:bg-zink-600;
+}
+th.gridjs-th-fixed {
+  @apply shadow-md;
+}
+
+.gridjs-tr-selected {
+  @apply bg-slate-200 dark:bg-zink-600;
+}
+
+th.gridjs-th:first-child, td.gridjs-td:first-child {
+  border-left: 1px solid;
+  @apply border-slate-200 dark:border-zink-500;
+}
+
+th.gridjs-th:last-child, td.gridjs-td:last-child {
+  border-right: 1px solid;
+  @apply border-slate-200 dark:border-zink-500;
+}
+
+.gridjs-wrapper {
+  @apply border-slate-200 shadow-none dark:border-zink-500;
+}
+
+.css-13cymwt-control {
+  @apply border-slate-200 dark:border-zink-500 focus:outline-none focus:border-custom-500 disabled:bg-slate-100 dark:disabled:bg-zink-600 disabled:border-slate-300 dark:disabled:border-zink-500 dark:disabled:text-zink-200 disabled:text-slate-500 dark:text-zink-100 dark:bg-zink-700 dark:focus:border-custom-800 placeholder:text-slate-400 dark:placeholder:text-zink-200 hover:border-slate-200 dark:hover:border-zink-500 !important;
+}
+.css-13cymwt-control .css-1u9des2-indicatorSeparator {
+  @apply bg-slate-200 dark:bg-zink-500;
+}
+.css-13cymwt-control .css-1p3m7a8-multiValue {
+  @apply bg-custom-500;
+}
+.css-13cymwt-control .css-1p3m7a8-multiValue .css-wsp0cs-MultiValueGeneric {
+  @apply text-white;
+}
+
+.css-1nmdiq5-menu {
+  @apply bg-white dark:bg-zink-700 shadow-lg shadow-slate-200 dark:shadow-zink-500/20 !important;
+}
+.css-1nmdiq5-menu .css-d7l1ni-option {
+  @apply bg-slate-100 dark:bg-zink-600;
+}
+
+[aria-disabled=true].css-16xfy0z-control {
+  @apply border-slate-200 dark:border-zink-500 focus:outline-none focus:border-custom-500 disabled:bg-slate-100 dark:disabled:bg-zink-600 disabled:border-slate-300 dark:disabled:border-zink-500 dark:disabled:text-zink-200 disabled:text-slate-500 dark:text-zink-100 dark:bg-zink-700 dark:focus:border-custom-800 placeholder:text-slate-400 dark:placeholder:text-zink-200 hover:border-slate-200 dark:hover:border-zink-500 !important;
+}
+
+.css-t3ipsp-control {
+  @apply bg-white dark:bg-zink-700 border-slate-200 dark:border-zink-500 !important;
+}
+
+.css-qbdosj-Input, .css-166bipr-Input, .css-1fdsijx-ValueContainer {
+  @apply text-slate-700 dark:text-zink-100 !important;
+}
+
+.rdl-filter, .rdl-control {
+  @apply bg-white dark:bg-zink-700 text-slate-800 dark:text-zink-50 border-slate-200 dark:border-zink-500 !important;
+}
+
+.react-dual-listbox * {
+  @apply py-2;
+}
+
+.rdl-btn {
+  @apply bg-white dark:bg-zink-700 text-slate-800 dark:text-zink-50 border-slate-200 dark:border-zink-500 !important;
+}
+.rdl-btn:hover:not(:disabled) {
+  @apply border-slate-200 dark:border-zink-500 !important;
+}
+
+:is(.twitter-picker, .sketch-picker, .chrome-picker, .compact-picker, .github-picker) {
+  @apply bg-white dark:bg-zink-600 !important;
+}
+
+.group\/menu-link:hover,
+.animate {
+  animation-iteration-count: 2;
+  stroke-dasharray: 10;
+}/*# sourceMappingURL=tailwind.main.min.css.map */

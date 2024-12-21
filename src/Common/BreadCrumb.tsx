@@ -13,12 +13,18 @@ const BreadCrumb = ({ title, pageTitle }: BreadCrumbProps) => {
     return (
         <React.Fragment>
 
-            <div className="w-full py-5 border border-sky-200 rounded-md p-4 my-4">
-                <div className="flex justify-between">
-                    <div className="flex items-center">{title}   <ChevronLeft size={18}  />   {pageTitle} </div>
-                    <div className="">{pageTitle} </div>
-                </div>
-            </div>
+<div className="w-full py-5 border border-sky-200 rounded-md p-4 my-4">
+  <div className="flex justify-between">
+    <div className="flex items-center text-base sm:text-sm">
+      {title} <ChevronLeft size={18} className="mx-1" /> 
+      <span className="hidden sm:block">{pageTitle}</span>
+    </div>
+    <div className="text-base sm:text-sm">{pageTitle}</div>
+  </div>
+</div>
+
+
+
             {/* <div className="flex  flex-col gap-2 py-4 md:flex-row md:items-center print:hidden">
                  <div className="grow">
                     <h5 className="text-16">{title}</h5>

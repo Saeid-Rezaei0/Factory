@@ -17,14 +17,14 @@ const VerticalLayout = (props: any) => {
                 return (
                     <React.Fragment key={key} >
                         {item['isTitle'] ?
-                            <li className="px-4 py-1 text-vertical-menu-item group-data-[sidebar=dark]:text-vertical-menu-item-dark group-data-[sidebar=brand]:text-vertical-menu-item-brand group-data-[sidebar=modern]:text-vertical-menu-item-modern uppercase font-medium text-[11px] cursor-default tracking-wider group-data-[sidebar-size=sm]:hidden group-data-[layout=horizontal]:hidden inline-block group-data-[sidebar-size=md]:block group-data-[sidebar-size=md]:underline group-data-[sidebar-size=md]:text-center group-data-[sidebar=dark]:dark:text-zink-200">
+                            <li className="px-4 py-1  text-vertical-menu-item group-data-[sidebar=dark]:text-vertical-menu-item-dark group-data-[sidebar=brand]:text-vertical-menu-item-brand group-data-[sidebar=modern]:text-vertical-menu-item-modern uppercase font-medium text-[11px] cursor-default tracking-wider group-data-[sidebar-size=sm]:hidden group-data-[layout=horizontal]:hidden inline-block group-data-[sidebar-size=md]:block group-data-[sidebar-size=md]:underline group-data-[sidebar-size=md]:text-center group-data-[sidebar=dark]:dark:text-zink-200">
                                 <span data-key="t-menu">
                                     {props.t(item.label)}
                                 </span>
                             </li>
                             : (
                                 (item.subItems ? (
-                                    <Dropdown className="relative group-data-[layout=horizontal]:shrink-0 group/sm"
+                                    <Dropdown className="relativegroup-data-[layout=horizontal]:shrink-0 group/sm"
                                         active={window.location.pathname}
                                         id={item.id}
                                     >
